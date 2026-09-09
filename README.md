@@ -21,3 +21,13 @@ body {
     background: #f5f5f5;
 }
 
+Used 'https://www.w3schools.com/css/css3_flexbox_container.asp' to help with configuring the flexbox.
+
+Main difficulty:
+I had a hard time identifying when I was supposed to use 'rem', 'auto', and sizing configuration in CSS.
+
+Ex:
+width: min(100% - 2rem, 1100px);
+margin: 0 auto;
+padding: 1rem 0;
+
