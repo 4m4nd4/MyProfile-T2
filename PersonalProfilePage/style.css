@@ -1,0 +1,200 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f5f5f5;
+}
+
+/* Header */
+.header {
+    background: #222;
+    color: white;
+}
+
+.nav {
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+}
+
+/* Hero section */
+.intro {
+    padding: 5rem 0;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.photo-container {
+    flex: 0 1 300px;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.bio {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.greeting {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.bio h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1.1;
+}
+
+/* Sections */
+.skills,
+.contact {
+    padding: 4rem 0;
+}
+
+.skills h2,
+.contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* Skills list */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+.skills-list li {
+    padding: 0.7rem 1.2rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 999px;
+}
+
+/* Contact links */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.7rem 1.4rem;
+    color: white;
+    background: #222;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    background: #444;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #666;
+    background: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    .intro {
+        padding: 3rem 0;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .photo-container {
+        flex-basis: auto;
+        width: min(70vw, 240px);
+    }
+
+    .bio {
+        flex-basis: auto;
+    }
+
+    .skills,
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .skills-list,
+    .contact-links {
+        justify-content: center;
+    }
+}
