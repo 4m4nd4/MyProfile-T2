@@ -1,7 +1,8 @@
 # MyProfile-T2
 Practicing HTML and CSS by creating a simple profile.
 
-<img width="946" height="427" alt="image" src="https://github.com/user-attachments/assets/a0c9933d-55f7-4cf6-b93d-b5866ad4abf2" />
+<img width="946" height="427" alt="image" src="https://github.com/user-attachments/assets/a0c9933d-55f7-4cf6-b93d-b5866ad4abf2" /> <img width="203" height="413" alt="image" src="https://github.com/user-attachments/assets/a61c4587-0eac-4bb3-af98-4891111db708" />
+
 
 Reminders:
 - noopener → prevents the new page from accessing the original page through 'window.opener'. This is a security feature when using target="_blank".
